@@ -1,34 +1,12 @@
-#WebToPay Lib DotNet
+# What is paysera-bank-client?
+WebToPay Lib DotNet is a library that will allow you to make payment requests to the Paysera website.
 
-##What is WebToPay Lib DotNet?
-WebToPay Lib DotNet is a library that will allow you to make payment requests to the WebToPay website.
-
-##Sections
-* [Requirements](#requirements)
-* [Directory structure](#directory-structure)
-* [Installation](#installation)
-* [Code samples](#code-samples)
-* [Contact Us](#contacts)
-
-##Requirements
-* .NET Framework 3.5
-
-##Directory structure
-The project directory is divided into three parts
-* bin/ - a compiled library DLL file
-* example/ - a ready to use example
-* src/ - the source of the library
+# .NET Standard 2.0
 
 
-##Installation
-* Use `git clone https://github.com/evp/webtopay-lib-dotnet.git` to obtain the newest version of the library.
-* Copy the EVP.WebToPay.ClientAPI.dll located in the bin directory to your project folder.
-* Add a reference to the API DLL + Add a using EVP.WebToPay.ClientAPI statement anywhere you wish to use the library.
-
-You have successfully installed the WebToPay Lib DotNet library!
 
 
-##Code samples
+## Code samples
 Before making a request you are to create an instance of the Client class.
 ```c#
 int projectId = 0;
@@ -63,13 +41,3 @@ Once the request has been built, you may build the request URL and redirect your
 string redirectUrl = client.BuildRequestUrl(request);
 Response.Redirect(redirectUrl);
 ```
-
-##Contacts
-If you have any further questions feel free to contact us:
-
-"EVP International", UAB    
-Mėnulio g. 7    
-LT-04326 Vilnius    
-Email: support@paysera.com    
-Tel. +370 (5) 2 03 27 19    
-Faksas +370 (5) 2 63 91 79    
